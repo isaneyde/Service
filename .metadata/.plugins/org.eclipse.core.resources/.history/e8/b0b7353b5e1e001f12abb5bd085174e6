@@ -1,0 +1,41 @@
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css}" />
+  <link rel="stylesheet" href="/src/main/resources/static/css/style.css">
+  <title>Pagina inicial</title>
+</head>
+
+<body>
+  <a href="index.html" id="logo">
+    <button></button>
+  </a>
+  <a href="index.html" id="logotipo">HomeService</a>
+
+  <nav>
+    <ul id="navbar">
+      <li><a href="#" class="nav-link">Sobre nós</a></li>
+      <li><a href="prestador/cadastro.html" class="nav-link">Prestar serviços</a></li>
+      <li><a href="#" class="nav-link"><button class="login">Log in</button></a></li>
+    </ul>
+  </nav>
+  <button class="linha"></button>
+  <div class="container">
+    <main class="conteudo-principal">
+      <h1>A <span class="est-test">Procura</span> de ajuda
+        para realizar as suas tarefas de
+        <span class="est-test">Casa</span>?
+      </h1>
+      <p class="descricao">Seja bem vindo a Home Service, somos uma empresa intermediária que visa facilitar a conexão
+        entre quem busca os serviços e quem deseja fornecer serviços domésticos </p>
+    </main>
+    <a href="cliente/cadastro.html" class="bnt-link"><button class="bnt-enviar">Comece agora!!!</button></a>
+  </div>
+  
+<script src="@{/webjars/jquery/3.1.1/jquery.min.js}"></script>
+<script src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
+</body>
+
+</html>

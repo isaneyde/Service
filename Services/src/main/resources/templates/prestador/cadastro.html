@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Formulário de Cadastro</title>
+    <header>
+        <a href="index.html" id="logo">
+            <button></button>
+        </a>
+        <a href="index.html" id="logotipo">HomeService</a>
+
+        <nav>
+            <ul id="navbar">
+
+                <li><a href="/index.html" class="nav-link">Pagina Inicial</a></li>
+                <li><a href="#" class="nav-link"></a></li>
+                <li><a href="/templates/prestador/cadastro.html" class="nav-link">Prestar serviços</a></li>
+                <li><a href="#" class="nav-link"><button class="login">Log in</button></a></li>
+
+            </ul>
+        </nav>
+        <button class="linha"></button>
+    </header>
+</head>
+
+<body>
+    <div class="container mt-10">
+        <h1 class="text-center">Formulário de Cadastro</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome Completo</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome completo"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Telefone</label>
+                        <input type="number" class="form-control" id="telefone" placeholder="Digite seu telefone"
+                            maxlength="9" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="dataNascimento" class="form-label">Data de Nascimento</label>
+                        <input type="date" class="form-control" id="dataNascimento" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nuit" class="form-label">NUIT</label>
+                        <input type="number" class="form-control" id="nuit" placeholder="Digite seu NUIT" maxlength="9"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="bilheteIdentidade" class="form-label">Bilhete de Identidade</label>
+                        <input type="text" class="form-control" id="bilheteIdentidade"
+                            placeholder="Digite seu bilhete de identidade" maxlength="13">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="reset" class="btn btn-primary">Limpar</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+
+                    <label for="servicos" class="form-label">Escolha os dias de semana</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Domingo" id="dom">
+                        <label class="form-check-label" for="dom">
+                            Domingo
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Segunda" id="seg">
+                        <label class="form-check-label" for="seg">
+                            Segunda-feira
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Terça" id="ter">
+                        <label for="ter" class="form-check-label" >
+                            Terça-feira
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="quar" id="qua">
+                        <label class="form-check-label" for="qua">
+                            Quarta-feira
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="quinta" id="qui">
+                        <label class="form-check-label" for="qui">
+                            Quinta-feira
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="sexta" id="sex">
+                        <label class="form-check-label" for="sex">
+                            Sexta-feira
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="sabado" id="sab">
+                        <label class="form-check-label" for="sab">
+                            Sabádo
+                        </label>
+                    </div>
+
+
+                    <label for="servicos" class="form-label">Escolha os serviços a prestar</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="lavarRoupa" id="lavarRoupa">
+                        <label class="form-check-label" for="lavarRoupa">
+                            Lavar Roupa
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="lavarLoica" id="lavarLoica">
+                        <label class="form-check-label" for="lavarLoica">
+                            Lavar Loiça
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="limpezaGeral" id="limpezaGeral">
+                        <label class="form-check-label" for="limpezaGeral">
+                            Limpeza Geral
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="engomarRoupa" id="engomarRoupa">
+                        <label class="form-check-label" for="engomarRoupa">
+                            Engomar Roupa
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="cozinhar" id="cozinhar">
+                        <label class="form-check-label" for="cozinhar">
+                            Cozinhar
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
